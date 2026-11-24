@@ -1,0 +1,127 @@
+{
+ "SEED": 42,
+ "VAL_FRAC": 0.1,
+ "TEST_FRAC": 0.1,
+ "IMG_SIZE": 672,
+ "TRAIN_SCALES": [
+  552,
+  576,
+  600,
+  624,
+  648,
+  672,
+  696,
+  720,
+  744,
+  768,
+  792
+ ],
+ "SCALE_JITTER": 0.18,
+ "HFLIP_P": 0.5,
+ "EFFECTIVE_BATCH": 8,
+ "TOTAL_STEPS": 4000,
+ "NUM_EVALS": 20,
+ "WARMUP_STEPS": 200,
+ "AMP": true,
+ "MAX_DET": 100,
+ "SCORE_THRESH": 0.001,
+ "TRAIN_FRACTIONS": [
+  0.25,
+  0.5,
+  1.0
+ ],
+ "MODELS": {
+  "yolo26l_seg": {
+   "impl": "yolo",
+   "family": "CNN",
+   "weights": "yolo26l-seg.pt",
+   "micro_batch": 8,
+   "optimizer": "AdamW",
+   "lr": 0.000128,
+   "lrf": 0.01,
+   "momentum": 0.9,
+   "weight_decay": 0.0005
+  },
+  "maskrcnn_r50_fpn": {
+   "impl": "maskrcnn",
+   "family": "CNN",
+   "micro_batch": 8,
+   "optimizer": "SGD",
+   "lr": 0.01,
+   "momentum": 0.9,
+   "weight_decay": 0.0001,
+   "lr_milestones": [
+    0.667,
+    0.889
+   ],
+   "lr_gamma": 0.1
+  },
+  "mask2former_swin_t": {
+   "impl": "mask2former",
+   "family": "Transformer",
+   "checkpoint": "facebook/mask2former-swin-tiny-coco-instance",
+   "micro_batch": 4,
+   "optimizer": "AdamW",
+   "lr": 0.0001,
+   "weight_decay": 0.05,
+   "backbone_lr_mult": 0.1,
+   "poly_power": 0.9,
+   "clip_norm": 0.01
+  },
+  "rfdetr_seg_l": {
+   "impl": "rfdetr",
+   "family": "Transformer",
+   "class": "RFDETRSegLarge",
+   "micro_batch": 4,
+   "lr": 0.0001,
+   "lr_encoder": 0.00015,
+   "weight_decay": 0.0001
+  }
+ },
+ "MODEL_ORDER": [
+  "yolo26l_seg",
+  "maskrcnn_r50_fpn",
+  "mask2former_swin_t",
+  "rfdetr_seg_l"
+ ],
+ "SHARED_KEYS": [
+  "SEED",
+  "VAL_FRAC",
+  "TEST_FRAC",
+  "IMG_SIZE",
+  "TRAIN_SCALES",
+  "SCALE_JITTER",
+  "HFLIP_P",
+  "EFFECTIVE_BATCH",
+  "TOTAL_STEPS",
+  "NUM_EVALS",
+  "WARMUP_STEPS",
+  "AMP",
+  "MAX_DET",
+  "SCORE_THRESH",
+  "TRAIN_FRACTIONS"
+ ],
+ "NUM_WORKERS": 2,
+ "MAX_ATTEMPTS": 3,
+ "LOG_EVERY_STEPS": 20,
+ "CLEAN_RUN_DIRS": true,
+ "DATASET_DIR": "/kaggle/input/datasets/jeremymattathiasmboe/panoptic-indoor-dataset-instance-segmentation",
+ "OUTPUT_DIR": "/kaggle/working/outputs",
+ "RUNS_DIR": "/kaggle/working/runs",
+ "DATA_DIR": "/tmp/exp_data",
+ "WORK_CWD": "/tmp/exp_cwd",
+ "WANDB_DIR": "/tmp/wandb",
+ "STOP_FILE": "/tmp/exp_STOP",
+ "INPUT_ROOT": "/kaggle/input",
+ "CONFIG_PATH": "/kaggle/working/exp_config.json",
+ "WANDB_ENABLED": true,
+ "WANDB_PROJECT": "panoptic-indoor-instance-seg",
+ "WANDB_ENTITY": "",
+ "GPUS": [
+  0,
+  1
+ ],
+ "SESSION_START_TS": 1794818625.7919416,
+ "SESSION_BUDGET_HOURS": 11.0,
+ "PAUSE_MARGIN_MIN": 40
+}

@@ -1,0 +1,31 @@
+
+===== session 2026-11-16 09:45:21 gpu 0 attempt 1 =====
+[09:45:23] worker start maskrcnn_r50_fpn__split_25 on Tesla T4
+[09:45:26] maskrcnn_r50_fpn__split_25 schedule {'n_train': 184, 'steps_per_epoch': 23, 'epochs': 174, 'total_steps': 4002, 'val_every_epochs': 9, 'micro_batch': 8, 'accumulate': 1, 'warmup_epochs': 8.695652173913043}
+/kaggle/working/src/train_maskrcnn.py:58: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  return sum(losses.values()), {k: float(v) for k, v in losses.items()}
+/kaggle/working/src/common_torch.py:160: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  lr_sched.step()
+[09:50:16] val ep9/174: segm_AP=0.0819 AP50=0.1461 fps=5.7
+[09:55:05] val ep18/174: segm_AP=0.1412 AP50=0.2569 fps=6.4
+[09:59:56] val ep27/174: segm_AP=0.1452 AP50=0.2528 fps=6.4
+[10:04:48] val ep36/174: segm_AP=0.1522 AP50=0.2623 fps=6.2
+[10:09:40] val ep45/174: segm_AP=0.1555 AP50=0.2638 fps=6.2
+[10:14:30] val ep54/174: segm_AP=0.1568 AP50=0.2736 fps=6.3
+[10:19:23] val ep63/174: segm_AP=0.1600 AP50=0.2743 fps=6.3
+[10:24:13] val ep72/174: segm_AP=0.1634 AP50=0.2693 fps=6.4
+[10:29:02] val ep81/174: segm_AP=0.1604 AP50=0.2701 fps=6.6
+[10:33:53] val ep90/174: segm_AP=0.1660 AP50=0.2671 fps=6.4
+[10:38:46] val ep99/174: segm_AP=0.1639 AP50=0.2704 fps=6.1
+[10:43:39] val ep108/174: segm_AP=0.1549 AP50=0.2611 fps=6.3
+[10:48:29] val ep117/174: segm_AP=0.1686 AP50=0.2786 fps=6.5
+[10:53:23] val ep126/174: segm_AP=0.1710 AP50=0.2766 fps=6.7
+[10:58:10] val ep135/174: segm_AP=0.1684 AP50=0.2740 fps=7.1
+[11:02:55] val ep144/174: segm_AP=0.1741 AP50=0.2825 fps=6.7
+[11:07:47] val ep153/174: segm_AP=0.1686 AP50=0.2764 fps=6.5
+[11:12:36] val ep162/174: segm_AP=0.1718 AP50=0.2819 fps=6.6
+[11:17:25] val ep171/174: segm_AP=0.1733 AP50=0.2788 fps=6.7
+[11:19:17] val ep174/174: segm_AP=0.1714 AP50=0.2787 fps=7.2
+[11:19:46] TEST: segm_AP=0.1547 AP50=0.2589 fps=6.2
+[11:19:49] DONE maskrcnn_r50_fpn__split_25 -> /kaggle/working/outputs/split_25/maskrcnn_r50_fpn
