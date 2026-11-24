@@ -1,0 +1,14 @@
+{
+  "model": "maskrcnn_r50_fpn",
+  "train_fraction": 1.0,
+  "family": "CNN",
+  "status": "done",
+  "attempts": 1,
+  "wandb_id": "2698effb294e",
+  "wandb_url": "https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/2698effb294e",
+  "gpu": 0,
+  "started_at": "2026-11-16 11:20:01",
+  "finished_at": "2026-11-16 12:54:11",
+  "test_segm_AP": 0.23007995113800442,
+  "test_segm_AP50": 0.353688898830009
+}

@@ -1,0 +1,29 @@
+{
+  "segm_AP": 0.39188787286087434,
+  "segm_AP50": 0.48714592133256734,
+  "segm_AP75": 0.4191645270170474,
+  "segm_APs": 0.21812377794840163,
+  "segm_APm": 0.36728227189103374,
+  "segm_APl": 0.46188986658960435,
+  "segm_AR1": 0.3450470773535126,
+  "segm_AR10": 0.5516041756190383,
+  "segm_AR100": 0.570291703994967,
+  "segm_ARs": 0.341014898588428,
+  "segm_ARm": 0.5301489807952259,
+  "segm_ARl": 0.688234459411517,
+  "segm_AP_thing": 0.448685060084661,
+  "segm_AP_stuff": 0.30564029226179096,
+  "classes_in_eval": 68,
+  "fps": 7.651672457349075,
+  "num_images": 92,
+  "schedule": {
+    "n_train": 738,
+    "steps_per_epoch": 93,
+    "epochs": 44,
+    "total_steps": 4092,
+    "val_every_epochs": 2,
+    "micro_batch": 4,
+    "accumulate": 2,
+    "warmup_epochs": 2.150537634408602
+  }
+}

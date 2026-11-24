@@ -1,0 +1,14 @@
+{
+  "model": "yolo26l_seg",
+  "train_fraction": 1.0,
+  "family": "CNN",
+  "status": "done",
+  "attempts": 1,
+  "wandb_id": "d148f0345b54",
+  "wandb_url": "https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/d148f0345b54",
+  "gpu": 1,
+  "started_at": "2026-11-16 09:41:41",
+  "finished_at": "2026-11-16 10:36:58",
+  "test_segm_AP": 0.2643490987953584,
+  "test_segm_AP50": 0.36239175812552954
+}

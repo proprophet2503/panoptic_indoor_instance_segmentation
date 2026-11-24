@@ -1,0 +1,14 @@
+{
+  "model": "rfdetr_seg_l",
+  "train_fraction": 0.25,
+  "family": "Transformer",
+  "status": "done",
+  "attempts": 1,
+  "wandb_id": "6011694f3b36",
+  "wandb_url": "https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/6011694f3b36",
+  "gpu": 1,
+  "started_at": "2026-11-16 12:24:22",
+  "finished_at": "2026-11-16 15:35:11",
+  "test_segm_AP": 0.23290304648816454,
+  "test_segm_AP50": 0.30986647408833523
+}

@@ -1,0 +1,30 @@
+{
+  "segm_AP": 0.17444766721570906,
+  "segm_AP50": 0.28984457355378423,
+  "segm_AP75": 0.17371127371959694,
+  "segm_APs": 0.03747261067805622,
+  "segm_APm": 0.16783539766761665,
+  "segm_APl": 0.24744487010551827,
+  "segm_AR1": 0.19106237035767362,
+  "segm_AR10": 0.30003389415561355,
+  "segm_AR100": 0.3077689675477223,
+  "segm_ARs": 0.07756118417883125,
+  "segm_ARm": 0.27877211326223184,
+  "segm_ARl": 0.4003615106787795,
+  "segm_AP_thing": 0.18699328495955253,
+  "segm_AP_stuff": 0.1553969143454283,
+  "classes_in_eval": 68,
+  "fps": 5.8105575110656735,
+  "num_images": 92,
+  "best_val_segm_AP": 0.21155184358287077,
+  "schedule": {
+    "n_train": 369,
+    "steps_per_epoch": 47,
+    "epochs": 86,
+    "total_steps": 4042,
+    "val_every_epochs": 4,
+    "micro_batch": 8,
+    "accumulate": 1,
+    "warmup_epochs": 4.25531914893617
+  }
+}

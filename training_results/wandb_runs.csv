@@ -1,0 +1,13 @@
+model,family,train_fraction,status,attempts,wandb_run_id,wandb_url,finished_at
+yolo26l_seg,CNN,0.25,done,1,770c59f0787a,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/770c59f0787a,2026-11-16 09:45:00
+yolo26l_seg,CNN,0.5,done,1,f725f9d4e24a,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/f725f9d4e24a,2026-11-16 09:41:36
+yolo26l_seg,CNN,1.0,done,1,d148f0345b54,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/d148f0345b54,2026-11-16 10:36:58
+maskrcnn_r50_fpn,CNN,0.25,done,1,137f767f9550,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/137f767f9550,2026-11-16 11:19:49
+maskrcnn_r50_fpn,CNN,0.5,done,1,dca0fa9f2a8a,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/dca0fa9f2a8a,2026-11-16 12:08:14
+maskrcnn_r50_fpn,CNN,1.0,done,1,2698effb294e,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/2698effb294e,2026-11-16 12:54:11
+mask2former_swin_t,Transformer,0.25,failed,1,4eab5fb32ea6,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/4eab5fb32ea6,
+mask2former_swin_t,Transformer,0.5,failed,1,9c8c68f79e0a,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/9c8c68f79e0a,
+mask2former_swin_t,Transformer,1.0,failed,1,03226ee0dfc1,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/03226ee0dfc1,
+rfdetr_seg_l,Transformer,0.25,done,1,6011694f3b36,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/6011694f3b36,2026-11-16 15:35:11
+rfdetr_seg_l,Transformer,0.5,done,1,d08a5349a577,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/d08a5349a577,2026-11-16 16:05:48
+rfdetr_seg_l,Transformer,1.0,done,1,5abb50e1a0f7,https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/5abb50e1a0f7,2026-11-16 18:27:55

@@ -1,0 +1,13 @@
+{
+  "model": "mask2former_swin_t",
+  "train_fraction": 0.5,
+  "family": "Transformer",
+  "status": "failed",
+  "attempts": 1,
+  "wandb_id": "9c8c68f79e0a",
+  "wandb_url": "https://wandb.ai/jeremymattathiasmboe-ai-research/panoptic-indoor-instance-seg/runs/9c8c68f79e0a",
+  "gpu": 1,
+  "started_at": "2026-11-16 12:10:41",
+  "last_exit_code": 1,
+  "error_tail": "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/mask2former/modeling_mask2former.py\", line 2510, in forward\n    loss_dict = self.get_loss_dict(\n        masks_queries_logits=masks_queries_logits[-1],\n    ...<3 lines>...\n        auxiliary_predictions=auxiliary_logits,\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/mask2former/modeling_mask2former.py\", line 2326, in get_loss_dict\n    loss_dict: dict[str, Tensor] = self.criterion(\n                                   ~~~~~~~~~~~~~~^\n        masks_queries_logits=masks_queries_logits,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n        auxiliary_predictions=auxiliary_predictions,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/mask2former/modeling_mask2former.py\", line 773, in forward\n    **self.loss_masks(masks_queries_logits, mask_labels, indices, num_masks),\n      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/mask2former/modeling_mask2former.py\", line 619, in loss_masks\n    target_masks = target_masks[tgt_idx]\n                   ~~~~~~~~~~~~^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 292.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 132.81 MiB is free. Including non-PyTorch memory, this process has 14.43 GiB memory in use. Of the allocated memory 13.18 GiB is allocated by PyTorch, and 1.10 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+}
