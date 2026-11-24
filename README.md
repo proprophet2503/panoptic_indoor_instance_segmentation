@@ -12,6 +12,7 @@ training_results/         konfigurasi, split data, log training, metrik test per
 wandb/                    script export W&B dan riwayat metrik setiap run (wandb_export/)
 test_set/                 40 foto test set sendiri (EXIF asli), label, data.yaml, foto GPS Map Camera
 evaluation/               notebook evaluasi dan hasil pada test set asli dan test set sendiri
+demo/                     notebook inferensi foto baru (demo_inference.ipynb), foto di demo/photos/
 bukti/                    screenshot proses anotasi
 ai_usage/                 screenshot penggunaan asisten AI
 ```

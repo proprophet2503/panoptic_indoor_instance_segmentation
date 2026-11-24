@@ -1,0 +1,7 @@
+model,foto,num_images,AP,recall50_at_vis,found_any_score,mean_score_found
+yolo26l_seg,tidak redup,31,0.2431,0.231,0.503,0.481
+yolo26l_seg,redup,9,0.2226,0.074,0.338,0.26
+maskrcnn_r50_fpn,tidak redup,31,0.2562,0.361,0.56,0.64
+maskrcnn_r50_fpn,redup,9,0.2308,0.147,0.485,0.349
+rfdetr_seg_l,tidak redup,31,0.4107,0.462,0.703,0.626
+rfdetr_seg_l,redup,9,0.4281,0.294,0.559,0.522

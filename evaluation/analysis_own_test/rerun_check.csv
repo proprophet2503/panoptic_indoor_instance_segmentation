@@ -1,0 +1,10 @@
+model,train_fraction,segm_AP_rerun,segm_AP_stored,diff
+yolo26l_seg,0.25,0.1505,0.1505,0.0
+yolo26l_seg,0.5,0.1412,0.1412,0.0
+yolo26l_seg,1.0,0.2238,0.2238,0.0
+maskrcnn_r50_fpn,0.25,0.1598,0.1598,0.0
+maskrcnn_r50_fpn,0.5,0.153,0.153,0.0
+maskrcnn_r50_fpn,1.0,0.2443,0.2443,0.0
+rfdetr_seg_l,0.25,0.2476,0.2476,0.0
+rfdetr_seg_l,0.5,0.2926,0.2926,0.0
+rfdetr_seg_l,1.0,0.4076,0.4076,0.0
