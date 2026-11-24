@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+
+# model checkpoints are too large for git (download them from the Kaggle notebook output)
+*.pt
+*.pth
+
+# local inputs and caches used by evaluation/evaluate_models.ipynb
+/dataset
+/evaluation/.pylib
+/evaluation/.cache
