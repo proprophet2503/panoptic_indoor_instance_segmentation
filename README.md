@@ -76,3 +76,6 @@ AP per kelas dan gambar hasil prediksi setiap model ada di `evaluation/results_o
   `training_results/split_{persen}/{model}/`, lalu jalankan `evaluation/evaluate_models.ipynb`. Checkpoint tidak
   disertakan di repositori karena ukurannya besar.
 - **Export W&B**: `wandb login`, lalu `python wandb/export_wandb.py`.
+- **Analisis test set sendiri**: setelah evaluasi, `python evaluation/own_test_analysis.py` menjalankan ulang prediksi,
+  menghitung AP per subset kondisi sulit (`test_set/hard_conditions.csv`), status kegagalan per instance, eksperimen
+  simulasi cahaya rendah, dan grafik laporan. Hasilnya ada di `evaluation/analysis_own_test/`.
